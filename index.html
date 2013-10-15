@@ -10,6 +10,7 @@
 </head>
 <body>
 <!-- Start of first page -->
+<form>
 <div data-role="page" id="home">
 
 	<div data-role="header">
@@ -33,7 +34,7 @@
 <div data-role="page" id="names">
 
 	<div data-role="header">
-		<a href="#home" data-icon="Home">Home</a>
+		<a href="index.html" data-icon="Home">Home</a>
 		<h1>Names</h1>
 	</div><!-- /header -->
 
@@ -41,7 +42,7 @@
 	<h2>One Name per Line please</h2>
 	<textarea cols="40" rows="20" name="textarea" id="members"></textarea>
 	<a href="#team" data-role="button" data-transition="slidedown" data-icon="arrow-r" data-iconpos="right">Step 2</a>
-	<p><a href="#home" data-role="button" data-icon="back" data-iconpos="notext" data-transition="slideup" >Back</a></p>
+	<p><a href="index.html" data-role="button" data-icon="back" data-iconpos="notext" data-transition="slideup" >Back</a></p>
 	</div><!-- /content -->
 	<div data-role="footer" data-position="fixed">
 		<h4>Groupeet</h4>
@@ -54,7 +55,7 @@
 <div data-role="page" id="team">
 
 	<div data-role="header">
-		<a href="#home" data-icon="Home">Home</a>
+		<a href="index.html" data-icon="Home">Home</a>
 		<h1>Groups</h1>
 	</div><!-- /header -->
 
@@ -91,7 +92,7 @@
 <div data-role="page" id="teamOptions">
 
 	<div data-role="header">
-		<a href="#home" data-icon="Home">Home</a>
+		<a href="index.html" data-icon="Home">Home</a>
 		<h1>Options</h1>
 	</div><!-- /header -->
 
@@ -100,7 +101,7 @@
 
 		 <input name="sliderGroup" id="sliderGroup"  min="0" max="10" value="3" type="range">
 
-		<a href="#" data-role="button" data-icon="star" data-iconpos="top">Generate!</a>
+		<a href="#" data-role="button">Generate Groups</a>
 		<p><a href="#team" data-role="button" data-icon="back" data-iconpos="notext" data-transition="slideup" >Back</a></p>
 	</div><!-- /content -->
 
@@ -108,5 +109,6 @@
 		<h4>Groupeet</h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
+</form>
 </body>
 </html>
