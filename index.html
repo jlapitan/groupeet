@@ -6,6 +6,7 @@
 
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery.mobile.min.js"></script>
+	<script src="js/groupeet.js"></script>
 </head>
 <body>
 <!-- Start of first page -->
@@ -61,13 +62,16 @@
 		<h2>Group names based on:</h2>
 		<div data-role="fieldcontain">
 		   
-		    <select name="select-native-3" id="select-native-3" data-iconpos="left">
-		        <option value="1">Animals</option>
-		        <option value="2">Cars</option>
-		        <option value="3">Dinosaurs</option>
-		        <option value="4">Greek Gods</option>
-		        <option value="5">Warriors</option>
+		    <select name="basedon" id="basedon" data-iconpos="left">
+		        <option value="animals">Animals</option>
+		        <option value="cars">Cars</option>
+		        <option value="dinosaurs">Dinosaurs</option>
+		        <option value="greekgods">Greek Gods</option>
+		        <option value="warriors">Warriors</option>
 		    </select>
+		    <br>
+		     <h4>You can edit these:</h4>
+          <textarea id="actualteams" name="teamnames" placeholder="Enter team names here"></textarea>
 	</div>
 
 		<a href="#teamOptions" data-role="button" data-transition="slidedown" data-icon="arrow-r" data-iconpos="right">Step 3</a>
