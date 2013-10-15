@@ -5,7 +5,7 @@
 	"launch_path": "/index.html",
 	"orientation": ["portrait"],
 	"icons": {
-		"128": "/img/groupeet.png"
+		"128": "/img/groupeets.png"
 	},
 	"developer": {
 		"name": "Joell Lapitan",
