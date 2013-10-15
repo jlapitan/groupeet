@@ -11,10 +11,6 @@ var basedon = {
                   };
 
 var arranged = [];
-//arranged.grpMember = 'joell';
-//arranged.grpName = 'zeus';
-//Grouped.push(arranged);
-
 
 
   $(function() {
@@ -32,34 +28,41 @@ var arranged = [];
 	var names=$('#members');
 	var numberOfgroups=$('#numberOfgroups').val();
 	var groupName=$("#actualteams").val().split('\n');
+
 	Mnames = names.val().split('\n');
 
+  var per = Mnames.length/numberOfgroups;
+
 	shuffle(Mnames);
-	//console.log(Mnames);
-	//fruits.splice(0,1);
 
-for(var j=0;j<=Mnames.length;j++)
-	{
-	for(var i=0;i<numberOfgroups;i++)
-	{
-		console.log("-----------------------------------------------"+ i);
-		arranged.push(groupName[i]);
-		console.log(arranged);
-		
-			Grouped.push(arranged[i]=Mnames.splice(0,1));
-			console.log(Grouped);
-		
-		console.log("-----------------------------------------------"+ i);
-	}
+
+
+var aytem=chunk(Mnames,per);
+
+$("#generatedGroups").html("");
+
+for(var x=0;x<numberOfgroups;x++)
+{
+  //console.log(groupName[x]+" || "+aytem[x]);
+$("#generatedGroups").append(
+                          "<h3>"+groupName[x]+"</h3>" +
+                          "<ul>" +
+                          "<li>" + aytem[x] + "</li>"+
+                          "</ul>"
+
+                        );
+
 }
-	
-
-Mnames=[];
-Grouped=[];
-
-  });
 
 
+
+
+});
+
+
+
+
+/**********************************************/
   function shuffle(array) {
   var currentIndex = array.length;
   var temporaryValue;
@@ -80,3 +83,21 @@ Grouped=[];
 
   return array;
 }
+
+
+function chunk(arr, len) {
+
+var items=[];
+  var chunks = [],
+      i = 0,
+      n = arr.length;
+
+  while (n > i) {
+    chunks.push(arr.slice(i, i += len));
+  }
+
+  return chunks;
+}
+
+
+
