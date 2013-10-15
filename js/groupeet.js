@@ -10,7 +10,7 @@ var basedon = {
                     "warriors":  "Knights\nSpartans\nNinjas\nVikings\nSamurai\nLegionaires\nBarbarians"
                   };
 
-var arranged = { };
+var arranged = [];
 //arranged.grpMember = 'joell';
 //arranged.grpName = 'zeus';
 //Grouped.push(arranged);
@@ -35,19 +35,27 @@ var arranged = { };
 	Mnames = names.val().split('\n');
 
 	shuffle(Mnames);
-	console.log(Mnames);
+	//console.log(Mnames);
+	//fruits.splice(0,1);
 
+for(var j=0;j<=Mnames.length;j++)
+	{
 	for(var i=0;i<numberOfgroups;i++)
 	{
-
-		arranged.grpName=groupName[i];
+		console.log("-----------------------------------------------"+ i);
+		arranged.push(groupName[i]);
+		console.log(arranged);
+		
+			Grouped.push(arranged[i]=Mnames.splice(0,1));
+			console.log(Grouped);
+		
+		console.log("-----------------------------------------------"+ i);
 	}
+}
+	
 
-
-	for(var j=0;j<Mnames.length;j++)
-	{
-		console.log(Mnames[j]);
-	}
+Mnames=[];
+Grouped=[];
 
   });
 
