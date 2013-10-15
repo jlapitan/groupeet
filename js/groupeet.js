@@ -92,7 +92,7 @@ var items=[];
       i = 0,
       n = arr.length;
 
-  while (n > i) {
+  while (i < n) {
     chunks.push(arr.slice(i, i += len));
   }
 
