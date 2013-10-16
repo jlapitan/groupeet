@@ -1,0 +1,15 @@
+{
+	"name": "Groupeet",
+	"description": "Groupeet is a simple random group generator that lets you create group quickly and easily",
+	"version": "1.0",
+	"launch_path": "/index.html",
+	"orientation": ["portrait"],
+	"icons": {
+		"128": "/img/groupeets.png"
+	},
+	"developer": {
+		"name": "Joell Lapitan",
+		"url": "http://www.jlapitan.com"
+	},
+	"default_locale": "en"
+}
